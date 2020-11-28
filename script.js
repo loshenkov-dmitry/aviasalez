@@ -270,7 +270,7 @@ formSearch.addEventListener('submit', (event) => {
     if(formData.from && formData.to) {
         
         const requestData = `?depart_date =${formData.when}&origin=${formData.from.code}&destination=${formData.to.code}&one_way=true`;
-        getData(calendar + requestData, (data) => {
+        getData(PROXY + calendar + requestData, (data) => {
             renderCheap(data, formData.when);
     }, error => {
         alert("В этом направлении нет рейсов");
