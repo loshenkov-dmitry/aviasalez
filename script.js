@@ -10,10 +10,10 @@ const otherCheapTickets = document.getElementById('other-cheap-tickets');
 
 
 
-const CITY_API ='cities.json';
+const CITY_API ='http://api.travelpayouts.com/data/ru/cities.json';
 const PROXY = 'https://cors-anywhere.herokuapp.com/';
 const API_KEY = '7e5219dd7570a238b8aac2394697fb55';
-const calendar =' http://min-prices.aviasales.ru/calendar_preload';
+const calendar = 'http://min-prices.aviasales.ru/calendar_preload';
 const MAX_COUNT = 10;
 
 
