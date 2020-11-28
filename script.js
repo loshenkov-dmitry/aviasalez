@@ -273,7 +273,7 @@ formSearch.addEventListener('submit', (event) => {
         getData(calendar + requestData, (data) => {
             renderCheap(data, formData.when);
     }, error => {
-        allert("В этом направлении нет рейсов");
+        alert("В этом направлении нет рейсов");
         console.error('Ошибка', error)
     })
     } else {
