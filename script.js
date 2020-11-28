@@ -287,7 +287,7 @@ formSearch.addEventListener('submit', (event) => {
 
 
 
-getData(CITY_API, (data) => {
+getData(PROXY + CITY_API, (data) => {
     
     city = JSON.parse(data).filter((item) => item.name);
 
